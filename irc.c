@@ -61,12 +61,11 @@ static struct Chan {
 
 static char *chans[] = {
 	"#cat-v",
+	"##java",
+	"##c",
+	"#go-nuts",
 	"#plan9",
 	"#9front",
-	"##c",
-	"##csharp",
-	"#go-nuts",
-	"##java",
 	"#proglangdesign",
 	"#osdev",
 	"#2f30",
@@ -74,6 +73,9 @@ static char *chans[] = {
 	"#voidlinux",
 	"#anarchistlibrary",
 	"##fpga",
+	"#chibug",
+	"#pumpingstationone",
+	"#sshc",
 	NULL
 };
 
@@ -284,7 +286,7 @@ chfind(char *name)
 
 	assert(name);
 	for (i = nch - 1; i > 0; i--)
-		if (!strcmp(chl[i].name, name))
+		if (strcasecmp(chl[i].name, name) == 0)
 			break;
 	return i;
 }
