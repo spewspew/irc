@@ -61,9 +61,7 @@ static struct Chan {
 
 static char *chans[] = {
 	"#cat-v",
-	"##java",
 	"##c",
-	"#go-nuts",
 	"#plan9",
 	"#9front",
 	"#proglangdesign",
@@ -72,10 +70,10 @@ static char *chans[] = {
 	"#musl",
 	"#voidlinux",
 	"#anarchistlibrary",
-	"##fpga",
 	"#chibug",
 	"#pumpingstationone",
 	"#sshc",
+	"#sml",
 	NULL
 };
 
